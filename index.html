@@ -49,6 +49,7 @@
         }
 
         .centerFlex {
+
             /* Internet Explorer 10 */
             display:-ms-flexbox;
             -ms-flex-pack:center;
@@ -71,6 +72,23 @@
             text-align: center;
         }
 
+
+        @media (min-width: 900px)
+        {
+            .card {
+                border-radius: 2px;
+                width: 880px;
+                height: 500px;
+
+                transition-property: box-shadow;
+                transition-duration: 1s;
+                transition-delay: 0s;
+            }
+
+            .card:hover {
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);        
+            }
+        }
         .info { 
             height: 40px; 
             padding-bottom: 10px;
@@ -93,19 +111,20 @@
         }
 
         </style>
-
-
   </head>
 
 
     
 <body class="centerFlex">
+    <div class="card centerFlex">
     <div class="center">
     <p class="logo">Benchmark <span class="bold">AI</span> </p>
     <p class="tagline">Sovereign machine learning consultancy on a mission.</p>
     <p class="maillink"><a href="mailto:hello@benchmark-ai.org">hello@benchmark-ai.org</a></p>
     <p>{Cheltenham, Oxford}, UK</p>
     </div>
+    </div>
+
     <div class="info"> <p>© 2023. All rights reserved.</p>
      </div>
 </body>
