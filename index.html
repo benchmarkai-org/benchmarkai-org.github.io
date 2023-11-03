@@ -7,10 +7,13 @@
 
     <style>
         body {
-        font-family: 'Inter', sans-serif;
-        font-weight: 300;
-        font-size: 15px;
-        background-color: #FAF9F6;
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10 and IE 11 */
+            user-select: none; /* Standard syntax */
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            font-size: 15px;
+            background-color: #FAF9F6;
         }
 
         .bold {
@@ -82,7 +85,6 @@
 
                 transition-property: box-shadow;
                 transition-duration: 1s;
-                transition-delay: 0s;
             }
 
             .card:hover {
