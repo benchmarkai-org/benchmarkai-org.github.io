@@ -10,7 +10,7 @@
         font-family: 'Inter', sans-serif;
         font-weight: 300;
         font-size: 15px;
-        background-color: hsl(45, 20%, 97%);
+        background-color: #FAF9F6;
         }
 
         .bold {
@@ -72,14 +72,23 @@
             text-align: center;
         }
 
-        .card {
-            border-radius: 2px;
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);           
-            width: 880px;
-            height: 500px;
-            background-color: #FAF9F6;
-        }
 
+        @media (min-width: 900px)
+        {
+            .card {
+                border-radius: 2px;
+                width: 880px;
+                height: 500px;
+
+                transition-property: box-shadow;
+                transition-duration: 1s;
+                transition-delay: 0s;
+            }
+
+            .card:hover {
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);        
+            }
+        }
         .info { 
             height: 40px; 
             padding-bottom: 10px;
